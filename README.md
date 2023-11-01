@@ -48,14 +48,10 @@ This is work in Progress. If you would like to contribute, please feel free to d
 
 If you wish to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-## Links
-
-- **Repository**: [Your GitHub Repo URL]
-- **Issue tracker**: [Your GitHub Repo Issue URL]
 
 ## Licensing
 
 The code in this project is licensed under **MIT license**.
-```
+
 
 
