@@ -1,6 +1,4 @@
 
-
-```markdown
 # Lets-Shortify
 A simple web application to shorten URLs built using Flask, MySQL, and Redis.
 
@@ -60,4 +58,4 @@ If you wish to contribute, please fork the repository and use a feature branch. 
 The code in this project is licensed under **MIT license**.
 ```
 
-You can copy and paste the above content into your `README.md` file on GitHub. This should render properly.
+
