@@ -1,3 +1,6 @@
+
+
+```markdown
 # Lets-Shortify
 A simple web application to shorten URLs built using Flask, MySQL, and Redis.
 
@@ -14,9 +17,6 @@ A simple web application to shorten URLs built using Flask, MySQL, and Redis.
 
 - Docker and Docker Compose
 
-
-
-```markdown
 ### Installation
 
 1. Clone this repository:
@@ -41,9 +41,6 @@ A simple web application to shorten URLs built using Flask, MySQL, and Redis.
    ```
    http://localhost:1215/s/{shorten_url}
    ```
-```
-
-
 
 ## Running the Tests
 
@@ -61,5 +58,6 @@ If you wish to contribute, please fork the repository and use a feature branch. 
 ## Licensing
 
 The code in this project is licensed under **MIT license**.
+```
 
-
+You can copy and paste the above content into your `README.md` file on GitHub. This should render properly.
