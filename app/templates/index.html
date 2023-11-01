@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Shortify</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="form-container">
+    <h1 class="project-title">Let's Shortify</h1>
+    <form action="/generate" method="post">
+        <input type="text" class="form-input" name="input_url" placeholder="Enter URL here...">
+        <button type="submit" class="submit-btn">Shortify</button>
+    </form>
+    {% if shortened_url %}
+        <div class="shortened-url">
+            <p>Your shortened URL is: <a href="{{ shortened_url }}">{{ shortened_url }}</a></p>
+        </div>
+    {% endif %}
+</div>
+
+
+</body>
+</html>

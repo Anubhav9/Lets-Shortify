@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS info;
+
+CREATE TABLE IF NOT EXISTS url_mapping(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    actual_url VARCHAR(300),
+    hashed_url VARCHAR(100)
+);
