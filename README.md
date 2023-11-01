@@ -14,20 +14,36 @@ A simple web application to shorten URLs built using Flask, MySQL, and Redis.
 
 - Docker and Docker Compose
 
+
+
+```markdown
 ### Installation
 
 1. Clone this repository:
-```bash
-git clone [Your GitHub Repo URL]
-cd [Your Repo Directory Name]
-2. Start the Docker Container(s)
-```bash
-docker-compose up -d
-3. Navigate to the application in your web browser
-```bash
-http://localhost:1215/api/home
-4. Enter the url you want to shorten. The output screen will give you the shorten URL.
-5. Navigate to the shorten URL by navigating to localhost/s/{shorten_url}
+   ```bash
+   git clone [Your GitHub Repo URL]
+   cd [Your Repo Directory Name]
+   ```
+
+2. Start the Docker Container(s):
+   ```bash
+   docker-compose up -d
+   ```
+
+3. Navigate to the application in your web browser:
+   ```
+   http://localhost:1215/api/home
+   ```
+
+4. Enter the URL you want to shorten. The output screen will give you the shortened URL.
+
+5. Navigate to the shortened URL by navigating to:
+   ```
+   http://localhost:1215/s/{shorten_url}
+   ```
+```
+
+
 
 ## Running the Tests
 
