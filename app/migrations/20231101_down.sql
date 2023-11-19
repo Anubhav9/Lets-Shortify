@@ -1,2 +1,0 @@
-DROP TABLE IF EXISTS url_mapping;
-DROP DATABASE IF EXISTS info;
