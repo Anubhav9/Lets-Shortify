@@ -1,8 +1,8 @@
-DB_HOST="127.0.0.1"
+DB_HOST="mysql"
 DB_PORT=3306
 DB_NAME="info"
 DB_USER="root"
-REDIS_HOST="localhost"
+REDIS_HOST="redis"
 REDIS_PORT="6379"
 REDIS_DB=0
 REDIS_TTL=3600
