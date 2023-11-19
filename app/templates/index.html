@@ -17,8 +17,10 @@
         <button type="submit" class="submit-btn">Shortify</button>
     </form>
     {% if shortened_url %}
+        {% set modified_url = shortened_url %}
+        {% set modified_url = modified_url.replace('s/', '') %}
         <div class="shortened-url">
-            <p>Your shortened URL is: <a href="{{ shortened_url }}">{{ shortened_url }}</a></p>
+            <p>Your shortened URL is: <a href="{{ shortened_url }}">{{ modified_url }}</a></p>
         </div>
     {% endif %}
 </div>
