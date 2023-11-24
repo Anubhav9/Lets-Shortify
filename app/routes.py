@@ -24,13 +24,17 @@ def generate_hashed_url():
             output_string=controller.shorten_url(input_url)
             insert_hashed_url_into_db(input_url,output_string)
             logging.info("Hashed String has been saved into the DB with result ",output_string)
-            redislogic.store_key_value_pair_in_redis(input_url,output_string)
-            redirection_string="s/"+output_string
-            response=make_response(render_template("index.html",shortened_url=redirection_string),200)
-            return response
+            
         else:
             logging.info("Record already exists, hence not adding it into the DB")
-            return jsonify({"message":"Record already exists in DB,not adding it again"}),409
+            output_string=get_shorten_url_from_db(input_url)
+            logging.info("output string is ",output_string)
+
+        redislogic.store_key_value_pair_in_redis(input_url,output_string)
+        redirection_string="s/"+output_string
+        response=make_response(render_template("index.html",shortened_url=redirection_string),200)
+        return response
+
     else:
     
         return jsonify({"message":"Are you sure the URL that you have entered is a valid URL?"}),400
