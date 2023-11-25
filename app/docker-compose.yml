@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  flask_app:
+  app:
     build: .
     ports:
       - "1215:1215"
@@ -15,7 +15,7 @@ services:
     image: mysql:latest
     container_name: mysql_container
     environment:
-      MYSQL_ROOT_PASSWORD: "{ENTER YOUR PASSWORD HERE}"
+      MYSQL_ROOT_PASSWORD: "password123"
     ports:
       - "3306:3306"
     volumes:
