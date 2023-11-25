@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  flask_app:
+  app:
     build: .
     ports:
       - "1215:1215"
